@@ -24,15 +24,15 @@ public class Hooks {
 	@Before
 	public void openBrowser() throws MalformedURLException {
 		System.out.println("Called openBrowser");
-		/**/
+		/*
 		// foreground browser
 		System.setProperty("webdriver.chrome.driver", "/opt/chromedriver-2.33/chromedriver");
 		driver = new ChromeDriver();
-		/*
+		**/
 		// grid browser
 		DesiredCapabilities dc = DesiredCapabilities.chrome();
 		driver = new RemoteWebDriver(dc);
-		*/
+		/**/
 		driver.manage().deleteAllCookies();
 		//driver.manage().window().maximize();
 		driver.manage().window().setSize(new Dimension(1600,900));	}
