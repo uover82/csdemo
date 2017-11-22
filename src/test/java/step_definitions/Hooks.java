@@ -1,6 +1,7 @@
 package step_definitions;
 
 import java.net.MalformedURLException;
+import java.net.URL;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -31,7 +32,7 @@ public class Hooks {
 		**/
 		// grid browser
 		DesiredCapabilities dc = DesiredCapabilities.chrome();
-		driver = new RemoteWebDriver(dc);
+		driver = new RemoteWebDriver(new URL("http://192.168.0.14:4444/wd/hub"),dc);
 		/**/
 		driver.manage().deleteAllCookies();
 		//driver.manage().window().maximize();
@@ -40,6 +41,7 @@ public class Hooks {
 	/**
 	 * Embed a screenshot in test report if test is marked as failed
 	 */
+	/*
 	@After
 	public void embedScreenshot(Scenario scenario) {
 		
@@ -55,4 +57,5 @@ public class Hooks {
 
 		driver.quit();
 	}
+	*/
 }
