@@ -29,7 +29,7 @@ public class Hooks {
 		// foreground browser
 		System.setProperty("webdriver.chrome.driver", "/opt/chromedriver-2.33/chromedriver");
 		driver = new ChromeDriver();
-		**/
+		*/
 		// grid browser
 		DesiredCapabilities dc = DesiredCapabilities.chrome();
 		driver = new RemoteWebDriver(new URL("http://192.168.0.14:4444/wd/hub"),dc);
