@@ -36,12 +36,13 @@ public class Hooks {
 		/**/
 		driver.manage().deleteAllCookies();
 		//driver.manage().window().maximize();
-		driver.manage().window().setSize(new Dimension(1600,900));	}
+		driver.manage().window().setSize(new Dimension(1600,900));
+	}
 
 	/**
 	 * Embed a screenshot in test report if test is marked as failed
 	 */
-	/*
+	/**/
 	@After
 	public void embedScreenshot(Scenario scenario) {
 		
@@ -57,5 +58,5 @@ public class Hooks {
 
 		driver.quit();
 	}
-	*/
+	/**/
 }
