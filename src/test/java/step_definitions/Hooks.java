@@ -32,7 +32,7 @@ public class Hooks {
 		*/
 		// grid browser
 		DesiredCapabilities dc = DesiredCapabilities.chrome();
-		driver = new RemoteWebDriver(new URL("http://192.168.0.14:4444/wd/hub"),dc);
+		driver = new RemoteWebDriver(new URL("http://192.168.1.5:4444/wd/hub"),dc);
 		/**/
 		driver.manage().deleteAllCookies();
 		//driver.manage().window().maximize();
